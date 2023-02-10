@@ -1,0 +1,26 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: rgb(184, 40, 184);
+    height: 10vh;
+}
+nav{
+    background-color: rgb(161, 83, 83);
+    height: 5vh;
+}
+main{
+    background-color: gold;
+    height: 70vh;
+}
+footer{
+    background-color: cadetblue;
+    height: 10vh;
+}
+
+nav, footer, main, nav, header{
+    width: 95%;
+    margin: 3px auto;
+    border: 1px solid #cec2c2;
+
+}
