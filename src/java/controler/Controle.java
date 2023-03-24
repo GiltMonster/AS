@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import model.Acesso;
+import model.Departamento;
 import model.EmpresaDao;
 
 /**
@@ -23,7 +24,7 @@ public class Controle extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         
         PrintWriter out = response.getWriter();
-        String flag;
+        String flag, mensagem = "";
         flag = request.getParameter("flag");
         if(flag.equals("login")){
             String user, password;
@@ -54,13 +55,40 @@ public class Controle extends HttpServlet {
             
             }else{
                 
-                RequestDispatcher disp = request.getRequestDispatcher("acessoErro.jsp");
+                RequestDispatcher disp = request.getRequestDispatcher("mensagens.jsp");
                 disp.forward(request, response);
                            
             }
             
         }
-        
+        else if (flag.equalsIgnoreCase("CadastroDepartamento")) {
+            //agora eh necessario encapsular os dados no objeto departamento, para jogar na tabela do bd
+            Departamento dep;
+            dep = new Departamento();
+            dep.setIdDepartamento(request.getParameter("idDepartamento"));
+            dep.setNomeDepartamento(request.getParameter("nomeDepartamento"));
+            dep.setFoneDepartamento(request.getParameter("telefoneDepartamento"));
+            
+            EmpresaDao dao = new EmpresaDao();
+            int retorno = dao.salvarDepartamento(dep);
+            
+            switch (retorno) {
+                case 1:
+                    mensagem = "Departamento salvo com sucesso.";
+                    break;
+                case 2:
+                    mensagem = "Departamento já cadastrado.";
+                    break;
+                case 3:
+                    mensagem = "Erro: Entre em contato com o adminstrador.";
+                    break;
+                default:
+                    break;
+            }
+            request.setAttribute("m", mensagem);
+            RequestDispatcher disp = request.getRequestDispatcher("mensagens.jsp");
+            disp.forward(request, response);
+        }
     }
 
     @Override

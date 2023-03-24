@@ -9,6 +9,7 @@
         <!--        <link rel="stylesheet" href="css/style.css">-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <link rel="stylesheet" hrer="css/style.css">
     </head>
     <body class="container">
 
@@ -25,11 +26,11 @@
             </a>
 
             <ul class="nav nav-pills">
-                <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
-                <!--        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>-->
+                <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a>
+                <!--        <li class="nav-item"><a href="#" class="nav-link">Features</a>
+                        <li class="nav-item"><a href="#" class="nav-link">Pricing</a>
+                        <li class="nav-item"><a href="#" class="nav-link">FAQs</a>
+                        <li class="nav-item"><a href="#" class="nav-link">About</a>-->
             </ul>
         </header>
         <nav>
@@ -45,15 +46,32 @@
                         Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
                     </div>
                     <div class="dropdown mt-3">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                       Departamento
+                                    </button>
+                                 </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <a class="btn btn-outline-primary" href="CadastroDepartamento.html" target="conteudo">Incluir</a>
+                                    <a class="btn btn-outline-primary" href="components/departamento/AlterarDepartamento.html" target="conteudo">Alterar</a>
+                                    <a class="btn btn-outline-primary" href="components/departamento/ExcluirDepartamento.html" target="conteudo">Excluir</a>
+                                    <a class="btn btn-outline-primary" href="components/departamento/ConsultarDepartamento.html" target="conteudo">Consultar</a>
+                                    <a class="btn btn-outline-primary" href="components/departamento/ListarDepartamento.html" target="conteudo">Listar</a>
+                                </div>
+                            </div>
+                        </div>
                         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
                             Departamento
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="components/departamento/CadastroDepartamento.html" target="conteudo">Incluir</a></li>
-                            <li><a class="dropdown-item" href="components/departamento/AlterarDepartamento.html" target="conteudo">Alterar</a></li>
-                            <li><a class="dropdown-item" href="components/departamento/ExcluirDepartamento.html" target="conteudo">Excluir</a></li>
-                            <li><a class="dropdown-item" href="components/departamento/ConsultarDepartamento.html" target="conteudo">Consultar</a></li>
-                            <li><a class="dropdown-item" href="components/departamento/ListarDepartamento.html" target="conteudo">Listar</a></li>
+                            <a class="btn btn-outline-primary" href="CadastroDepartamento.html" target="conteudo">Incluir</a>
+                            <a class="btn btn-outline-primary" href="components/departamento/AlterarDepartamento.html" target="conteudo">Alterar</a>
+                            <a class="btn btn-outline-primary" href="components/departamento/ExcluirDepartamento.html" target="conteudo">Excluir</a>
+                            <a class="btn btn-outline-primary" href="components/departamento/ConsultarDepartamento.html" target="conteudo">Consultar</a>
+                            <a class="btn btn-outline-primary" href="components/departamento/ListarDepartamento.html" target="conteudo">Listar</a>
                         </ul>
                     </div>
                     
@@ -62,11 +80,11 @@
                             Funcionarios
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="components/funcionario/CadastroFuncionario.html" target="conteudo">Incluir</a></li>
-                            <li><a class="dropdown-item" href="components/funcionario/AlterarFuncionario.html" target="conteudo">Alterar</a></li>
-                            <li><a class="dropdown-item" href="components/funcionario/ExcluirFuncionario.html" target="conteudo">Excluir</a></li>
-                            <li><a class="dropdown-item" href="components/funcionario/ConsultarFuncionario.html" target="conteudo">Consultar</a></li>
-                            <li><a class="dropdown-item" href="components/funcionario/ListarFuncionario.html" target="conteudo">Listar</a></li>
+                            <a class="btn btn-outline-primary" href="components/funcionario/CadastroFuncionario.html" target="conteudo">Incluir</a>
+                            <a class="btn btn-outline-primary" href="components/funcionario/AlterarFuncionario.html" target="conteudo">Alterar</a>
+                            <a class="btn btn-outline-primary" href="components/funcionario/ExcluirFuncionario.html" target="conteudo">Excluir</a>
+                            <a class="btn btn-outline-primary" href="components/funcionario/ConsultarFuncionario.html" target="conteudo">Consultar</a>
+                            <a class="btn btn-outline-primary" href="components/funcionario/ListarFuncionario.html" target="conteudo">Listar</a>
                         </ul>
                     </div>
                     
@@ -75,11 +93,11 @@
                             Acesso
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="components/acesso/CadastroAcesso.html" target="conteudo">Incluir</a></li>
-                            <li><a class="dropdown-item" href="components/acesso/AlterarAcesso.html" target="conteudo">Alterar</a></li>
-                            <li><a class="dropdown-item" href="components/acesso/ExcluirAcesso.html" target="conteudo">Excluir</a></li>
-                            <li><a class="dropdown-item" href="components/acesso/ConsultarAcesso.html" target="conteudo">Consultar</a></li>
-                            <li><a class="dropdown-item" href="components/acesso/ListarAcesso.html" target="conteudo">Listar</a></li>
+                            <a class="btn btn-outline-primary" href="components/acesso/CadastroAcesso.html" target="conteudo">Incluir</a>
+                            <a class="btn btn-outline-primary" href="components/acesso/AlterarAcesso.html" target="conteudo">Alterar</a>
+                            <a class="btn btn-outline-primary" href="components/acesso/ExcluirAcesso.html" target="conteudo">Excluir</a>
+                            <a class="btn btn-outline-primary" href="components/acesso/ConsultarAcesso.html" target="conteudo">Consultar</a>
+                            <a class="btn btn-outline-primary" href="components/acesso/ListarAcesso.html" target="conteudo">Listar</a>
                         </ul>
                     </div>
                 </div>
@@ -87,9 +105,9 @@
 
         </p>
     </nav>
-    <main class="row">
+    <main>
 
-        <iframe src="abertura.html" name="conteudo" class="col-md"></iframe>
+        <iframe src="abertura.html" name="conteudo" class="container"></iframe>
 
     </main>
 

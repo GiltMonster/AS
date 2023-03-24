@@ -12,6 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1 style="color: red">!!!!ERRO!!!! ${m}</h1>
+        <h1>${m}</h1>
     </body>
 </html>

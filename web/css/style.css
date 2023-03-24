@@ -37,8 +37,11 @@ header{
     box-sizing: border-box;
     }
     
-    form{
-    flex: 60%;
+    
+    iframe{
+        background-color: #80868C;
+        width: 100vw;
+   height: 700px;
     }
     
     /* Parte para celular */
