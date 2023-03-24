@@ -63,43 +63,42 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                            Departamento
-                        </button>
-                        <ul class="dropdown-menu">
-                            <a class="btn btn-outline-primary" href="CadastroDepartamento.html" target="conteudo">Incluir</a>
-                            <a class="btn btn-outline-primary" href="components/departamento/AlterarDepartamento.html" target="conteudo">Alterar</a>
-                            <a class="btn btn-outline-primary" href="components/departamento/ExcluirDepartamento.html" target="conteudo">Excluir</a>
-                            <a class="btn btn-outline-primary" href="components/departamento/ConsultarDepartamento.html" target="conteudo">Consultar</a>
-                            <a class="btn btn-outline-primary" href="components/departamento/ListarDepartamento.html" target="conteudo">Listar</a>
-                        </ul>
+                        <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
+                                       Funcionario
+                                    </button>
+                                 </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <a class="btn btn-outline-primary" href="components/funcionario/CadastroFuncionario.html.html" target="conteudo">Incluir</a>
+                                    <a class="btn btn-outline-primary" href="components/funcionario/AlterarDepartamento.html" target="conteudo">Alterar</a>
+                                    <a class="btn btn-outline-primary" href="components/funcionario/ExcluirDepartamento.html" target="conteudo">Excluir</a>
+                                    <a class="btn btn-outline-primary" href="components/funcionario/ConsultarDepartamento.html" target="conteudo">Consultar</a>
+                                    <a class="btn btn-outline-primary" href="components/funcionario/ListarDepartamento.html" target="conteudo">Listar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
+                                       Acesso
+                                    </button>
+                                 </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <a class="btn btn-outline-primary" href="components/acesso/CadastroAcesso.html" target="conteudo">Incluir</a>
+                                    <a class="btn btn-outline-primary" href="components/acesso/AlterarAcesso.html" target="conteudo">Alterar</a>
+                                    <a class="btn btn-outline-primary" href="components/acesso/ExcluirAcesso.html" target="conteudo">Excluir</a>
+                                    <a class="btn btn-outline-primary" href="components/acesso/ConsultarAcesso.html" target="conteudo">Consultar</a>
+                                    <a class="btn btn-outline-primary" href="components/acesso/ListarAcesso.html" target="conteudo">Listar</a>
+                                </div>
+                            </div>
+                        </div>
+                            
                     </div>
                     
-                     <div class="dropdown mt-3">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                            Funcionarios
-                        </button>
-                        <ul class="dropdown-menu">
-                            <a class="btn btn-outline-primary" href="components/funcionario/CadastroFuncionario.html" target="conteudo">Incluir</a>
-                            <a class="btn btn-outline-primary" href="components/funcionario/AlterarFuncionario.html" target="conteudo">Alterar</a>
-                            <a class="btn btn-outline-primary" href="components/funcionario/ExcluirFuncionario.html" target="conteudo">Excluir</a>
-                            <a class="btn btn-outline-primary" href="components/funcionario/ConsultarFuncionario.html" target="conteudo">Consultar</a>
-                            <a class="btn btn-outline-primary" href="components/funcionario/ListarFuncionario.html" target="conteudo">Listar</a>
-                        </ul>
-                    </div>
                     
-                     <div class="dropdown mt-3">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                            Acesso
-                        </button>
-                        <ul class="dropdown-menu">
-                            <a class="btn btn-outline-primary" href="components/acesso/CadastroAcesso.html" target="conteudo">Incluir</a>
-                            <a class="btn btn-outline-primary" href="components/acesso/AlterarAcesso.html" target="conteudo">Alterar</a>
-                            <a class="btn btn-outline-primary" href="components/acesso/ExcluirAcesso.html" target="conteudo">Excluir</a>
-                            <a class="btn btn-outline-primary" href="components/acesso/ConsultarAcesso.html" target="conteudo">Consultar</a>
-                            <a class="btn btn-outline-primary" href="components/acesso/ListarAcesso.html" target="conteudo">Listar</a>
-                        </ul>
-                    </div>
                 </div>
             </div>
 
