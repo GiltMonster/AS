@@ -64,18 +64,18 @@ public class EmpresaDao {
             
     }
     
-//    public Departamento ConsultaDepartamento(String dep){
-//        
-////            conectar();
-////            try{
-////                TypedQuery<Departamento> query = maneger.createNamedQuery("Departamento.findAll", Departamento.class);
-////                List<Departamento> dep = query.getResultList();
-////                return dep;
-////            }catch(NoResultException ex){
-////                return null;
-////           }
-//            
-//    }
+    public Departamento ConsultaDepartamento(Departamento dep){
+        
+            conectar();
+            try{
+                TypedQuery<Departamento> query = maneger.createNamedQuery("Departamento.findByConsultaDepartamento", Departamento.class);
+                dep = query.getSingleResult();
+                return dep;
+            }catch(NoResultException ex){
+                return null;
+           }
+            
+    }
     
     
     

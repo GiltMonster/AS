@@ -99,6 +99,10 @@ public class Controle extends HttpServlet {
         }
         else if(flag.equalsIgnoreCase("consultarDepartamento")){
             Departamento dep = new Departamento();
+            request.setAttribute("pesquisaDepartamento", dep);
+            RequestDispatcher disp = request.getRequestDispatcher("./components/departamento/ConsultaDepartamento.jsp");
+            disp.forward(request, response);
+            
             
             
         }
