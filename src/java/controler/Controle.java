@@ -2,6 +2,7 @@ package controler;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -42,7 +43,7 @@ public class Controle extends HttpServlet {
             request.setAttribute("m", msg);
             
                 if(cargo.equalsIgnoreCase("Dev")){
-                    RequestDispatcher disp = request.getRequestDispatcher("acessoGerente.jsp");
+                    RequestDispatcher disp = request.getRequestDispatcher("./components/departamento/AcessoGerente.jsp");
                     disp.forward(request, response);
                     
                 }else if(cargo.equalsIgnoreCase("Patrão")){
@@ -88,6 +89,18 @@ public class Controle extends HttpServlet {
             request.setAttribute("m", mensagem);
             RequestDispatcher disp = request.getRequestDispatcher("mensagens.jsp");
             disp.forward(request, response);
+        }
+        else if(flag.equalsIgnoreCase("listarDepartamento")){
+            List<Departamento> departamentos = new EmpresaDao().listarDepartamento();
+            request.setAttribute("listaDepartamentos", departamentos);
+            RequestDispatcher disp = request.getRequestDispatcher("./components/departamento/Listar_departamento.jsp");
+            disp.forward(request, response);
+            
+        }
+        else if(flag.equalsIgnoreCase("consultarDepartamento")){
+            Departamento dep = new Departamento();
+            
+            
         }
     }
 

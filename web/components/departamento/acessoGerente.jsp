@@ -43,7 +43,7 @@
                 </div>
                 <div class="offcanvas-body">
                     <div class="">
-                        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                        Aqui vai um texto pra motivar o usuário: " "                                 ops. desculpe mais o usuário que va amerda :)
                     </div>
                     <div class="dropdown mt-3">
                         <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -55,43 +55,43 @@
                                  </h2>
                             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
-                                    <a class="btn btn-outline-primary" href="CadastroDepartamento.html" target="conteudo">Incluir</a>
-                                    <a class="btn btn-outline-primary" href="components/departamento/AlterarDepartamento.html" target="conteudo">Alterar</a>
-                                    <a class="btn btn-outline-primary" href="components/departamento/ExcluirDepartamento.html" target="conteudo">Excluir</a>
-                                    <a class="btn btn-outline-primary" href="components/departamento/ConsultarDepartamento.html" target="conteudo">Consultar</a>
-                                    <a class="btn btn-outline-primary" href="components/departamento/ListarDepartamento.html" target="conteudo">Listar</a>
+                                    <a class="btn btn-outline-success p-1" href="CadastroDepartamento.html" target="conteudo">Incluir</a>
+                                    <a class="btn btn-outline-secondary p-1" href="components/departamento/AlterarDepartamento.html" target="conteudo">Alterar</a>
+                                    <a class="btn btn-outline-danger p-1" href="components/departamento/ExcluirDepartamento.html" target="conteudo">Excluir</a>
+                                    <a class="btn btn-outline-warning p-1" href="components/departamento/ConsultarDepartamento.html" target="conteudo">Consultar</a>
+                                    <a class="btn btn-outline-warning p-1" href="Controle?flag=listarDepartamento" target="conteudo">Listar</a>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingOne">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                                        Funcionario
                                     </button>
                                  </h2>
                             <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
-                                    <a class="btn btn-outline-primary" href="components/funcionario/CadastroFuncionario.html.html" target="conteudo">Incluir</a>
-                                    <a class="btn btn-outline-primary" href="components/funcionario/AlterarDepartamento.html" target="conteudo">Alterar</a>
-                                    <a class="btn btn-outline-primary" href="components/funcionario/ExcluirDepartamento.html" target="conteudo">Excluir</a>
-                                    <a class="btn btn-outline-primary" href="components/funcionario/ConsultarDepartamento.html" target="conteudo">Consultar</a>
-                                    <a class="btn btn-outline-primary" href="components/funcionario/ListarDepartamento.html" target="conteudo">Listar</a>
+                                    <a class="btn btn-outline-success p-1" href="components/funcionario/CadastroFuncionario.html.html" target="conteudo">Incluir</a>
+                                    <a class="btn btn-outline-secondary p-1" href="components/funcionario/AlterarDepartamento.html" target="conteudo">Alterar</a>
+                                    <a class="btn btn-outline-danger p-1" href="components/funcionario/ExcluirDepartamento.html" target="conteudo">Excluir</a>
+                                    <a class="btn btn-outline-warning p-1" href="components/funcionario/ConsultarDepartamento.html" target="conteudo">Consultar</a>
+                                    <a class="btn btn-outline-warning p-1" href="components/funcionario/ListarDepartamento.html" target="conteudo">Listar</a>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingOne">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                                        Acesso
                                     </button>
                                  </h2>
                             <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
-                                    <a class="btn btn-outline-primary" href="components/acesso/CadastroAcesso.html" target="conteudo">Incluir</a>
-                                    <a class="btn btn-outline-primary" href="components/acesso/AlterarAcesso.html" target="conteudo">Alterar</a>
-                                    <a class="btn btn-outline-primary" href="components/acesso/ExcluirAcesso.html" target="conteudo">Excluir</a>
-                                    <a class="btn btn-outline-primary" href="components/acesso/ConsultarAcesso.html" target="conteudo">Consultar</a>
-                                    <a class="btn btn-outline-primary" href="components/acesso/ListarAcesso.html" target="conteudo">Listar</a>
+                                    <a class="btn btn-outline-success p-1" href="components/acesso/CadastroAcesso.html" target="conteudo">Incluir</a>
+                                    <a class="btn btn-outline-secondary p-1" href="components/acesso/AlterarAcesso.html" target="conteudo">Alterar</a>
+                                    <a class="btn btn-outline-danger p-1" href="components/acesso/ExcluirAcesso.html" target="conteudo">Excluir</a>
+                                    <a class="btn btn-outline-warning p-1" href="components/acesso/ConsultarAcesso.html" target="conteudo">Consultar</a>
+                                    <a class="btn btn-outline-warning p-1" href="components/acesso/ListarAcesso.html" target="conteudo">Listar</a>
                                 </div>
                             </div>
                         </div>
