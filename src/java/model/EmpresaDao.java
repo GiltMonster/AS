@@ -80,7 +80,8 @@ public class EmpresaDao {
     
     public int excluirDepartamento(String idDep){
         conectar();
-        Departamento dep = new Departamento();
+        Departamento dep = maneger.find(Departamento.class, idDep);
+       
         dep.setFoneDepartamento(idDep);
         try{
             
