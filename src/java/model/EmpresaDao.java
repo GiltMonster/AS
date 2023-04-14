@@ -64,17 +64,34 @@ public class EmpresaDao {
             
     }
     
-    public Departamento ConsultaDepartamento(Departamento dep){
+    public List<Departamento> consultaDepartamento(String nomeDep){
         
             conectar();
             try{
-                TypedQuery<Departamento> query = maneger.createNamedQuery("Departamento.findByConsultaDepartamento", Departamento.class);
-                dep = query.getSingleResult();
-                return dep;
+                TypedQuery<Departamento> query = maneger.createNamedQuery("Departamento.findByPesquisaDepartamento", Departamento.class);
+                query.setParameter("nomeDepartamento", "%" + nomeDep + "%");
+                List<Departamento> departamentos = query.getResultList();
+                return departamentos;
             }catch(NoResultException ex){
                 return null;
            }
             
+    }
+    
+    public int excluirDepartamento(String idDep){
+        conectar();
+        Departamento dep = new Departamento();
+        dep.setFoneDepartamento(idDep);
+        try{
+            
+            maneger.getTransaction().begin();
+            maneger.remove(dep);
+            maneger.getTransaction().commit();
+            return 1;
+
+        }catch(Exception ex){
+            return 0;
+        }
     }
     
     

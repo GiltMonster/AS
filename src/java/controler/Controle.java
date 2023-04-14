@@ -43,7 +43,7 @@ public class Controle extends HttpServlet {
             request.setAttribute("m", msg);
             
                 if(cargo.equalsIgnoreCase("Dev")){
-                    RequestDispatcher disp = request.getRequestDispatcher("./components/departamento/AcessoGerente.jsp");
+                    RequestDispatcher disp = request.getRequestDispatcher("./components/departamento/acessoGerente.jsp");
                     disp.forward(request, response);
                     
                 }else if(cargo.equalsIgnoreCase("Patrão")){
@@ -98,14 +98,38 @@ public class Controle extends HttpServlet {
             
         }
         else if(flag.equalsIgnoreCase("consultarDepartamento")){
-            Departamento dep = new Departamento();
-            request.setAttribute("pesquisaDepartamento", dep);
-            RequestDispatcher disp = request.getRequestDispatcher("./components/departamento/ConsultaDepartamento.jsp");
+           
+            String nomeDep = request.getParameter("nomeDepartamento");
+            EmpresaDao dao = new EmpresaDao();
+            
+            List<Departamento> departamentos = dao.consultaDepartamento(nomeDep);
+            
+            request.setAttribute("listaDepartamentos", departamentos);
+            RequestDispatcher disp = request.getRequestDispatcher("./components/departamento/Listar_departamento.jsp");
             disp.forward(request, response);
             
-            
+        }else if(flag.equalsIgnoreCase("ExcluirDepartamento")){
+           String idDep = request.getParameter("idDep");
+           EmpresaDao dao = new EmpresaDao();
+           int resultado = dao.excluirDepartamento(idDep);
+           if(resultado == 1){
+                mensagem = "Departamento excluido com sucesso.";
+                request.setAttribute("m", mensagem);
+                RequestDispatcher disp = request.getRequestDispatcher("mensagens.jsp");
+                disp.forward(request, response);
+           }else{
+                mensagem = "Erro ao tentar excluir o departamento.";
+                request.setAttribute("m", mensagem);
+                RequestDispatcher disp = request.getRequestDispatcher("mensagens.jsp");
+                disp.forward(request, response);
+           }
+           
+        }
+        else if(flag.equalsIgnoreCase("AlterarDepartamento")){
+           String idDep = request.getParameter("idDep");
             
         }
+        
     }
 
     @Override
