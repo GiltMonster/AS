@@ -117,6 +117,11 @@ public class Controle extends HttpServlet {
                 request.setAttribute("m", mensagem);
                 RequestDispatcher disp = request.getRequestDispatcher("mensagens.jsp");
                 disp.forward(request, response);
+           }else if(resultado == 2){
+                mensagem = "Esté departamento não existe.";
+                request.setAttribute("m", mensagem);
+                RequestDispatcher disp = request.getRequestDispatcher("mensagens.jsp");
+                disp.forward(request, response);
            }else{
                 mensagem = "Erro ao tentar excluir o departamento.";
                 request.setAttribute("m", mensagem);
@@ -127,6 +132,19 @@ public class Controle extends HttpServlet {
         }
         else if(flag.equalsIgnoreCase("AlterarDepartamento")){
            String idDep = request.getParameter("idDep");
+           String nomeDep = request.getParameter("nomeDep");
+           String foneDep = request.getParameter("foneDep");
+           
+           EmpresaDao dao = new EmpresaDao();
+           int resultado = dao.alterarDepartamento(idDep, nomeDep, foneDep);
+           if(resultado == 1){
+                mensagem = "Departamento alterado com sucesso.";
+           }else{
+                mensagem = "Erro ao tentar alterar o departamento.";
+           }
+            request.setAttribute("m", mensagem);
+            RequestDispatcher disp = request.getRequestDispatcher("mensagens.jsp");
+            disp.forward(request, response);
             
         }
         

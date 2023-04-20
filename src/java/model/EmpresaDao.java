@@ -80,21 +80,39 @@ public class EmpresaDao {
     
     public int excluirDepartamento(String idDep){
         conectar();
-        Departamento dep = maneger.find(Departamento.class, idDep);
-       
-        dep.setFoneDepartamento(idDep);
         try{
-            
-            maneger.getTransaction().begin();
-            maneger.remove(dep);
-            maneger.getTransaction().commit();
-            return 1;
-
+            Departamento dep = maneger.find(Departamento.class, idDep);
+            if(dep == null){
+                return 2;
+        
+            }else{
+                maneger.getTransaction().begin();
+                maneger.remove(dep);
+                maneger.getTransaction().commit();
+                return 1;
+            }
         }catch(Exception ex){
             return 0;
         }
     }
     
+    public int alterarDepartamento(String idDep, String nomeDep, String foneDep){
+        conectar();
+        try{
+            Departamento dep = maneger.find(Departamento.class, idDep);
+            
+            dep.setNomeDepartamento(nomeDep);
+            dep.setFoneDepartamento(foneDep);
+            
+            maneger.getTransaction().begin();
+            maneger.merge(dep);
+            maneger.getTransaction().commit();
+            
+            return 1;
+        }catch(Exception ex){
+         return 0;
+        }
+    }
     
     
     

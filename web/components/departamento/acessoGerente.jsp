@@ -57,7 +57,7 @@
                                 <div class="accordion-body">
                                     <a class="btn btn-outline-success p-1" href="CadastroDepartamento.html" target="conteudo">Incluir</a>
                                     <a class="btn btn-outline-secondary p-1" href="components/departamento/AlterarDepartamento.jsp" target="conteudo">Alterar</a>
-                                    <a class="btn btn-outline-danger p-1" href="components/departamento/ExcluirDepartamento.html" target="conteudo">Excluir</a>
+                                    <a class="btn btn-outline-danger p-1" href="ExcluirDepartamento.html" target="conteudo">Excluir</a>
                                     <a class="btn btn-outline-warning p-1" href="ConsultarDepartamento.html" target="conteudo">Consultar</a>
                                     <a class="btn btn-outline-warning p-1" href="Controle?flag=listarDepartamento" target="conteudo">Listar</a>
                                 </div>

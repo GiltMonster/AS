@@ -3,8 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/lucas.scampos4/Desktop/aulas_de_arquitetura_de_software/src/java/model/Acesso.java</file>
-            <file>file:/C:/Users/lucas.scampos4/Desktop/aulas_de_arquitetura_de_software/src/java/model/Departamento.java</file>
+            <file>file:/C:/Users/lucas.scampos4/Desktop/aulas_de_arquitetura_de_software/web/components/departamento/acessoGerente.jsp</file>
+            <file>file:/C:/Users/lucas.scampos4/Desktop/aulas_de_arquitetura_de_software/web/components/departamento/Listar_departamento.jsp</file>
+            <file>file:/C:/Users/lucas.scampos4/Desktop/aulas_de_arquitetura_de_software/web/AlterarDepartamento.jsp</file>
             <file>file:/C:/Users/lucas.scampos4/Desktop/aulas_de_arquitetura_de_software/src/java/controler/Controle.java</file>
             <file>file:/C:/Users/lucas.scampos4/Desktop/aulas_de_arquitetura_de_software/src/java/model/EmpresaDao.java</file>
         </group>
