@@ -114,6 +114,19 @@ public class EmpresaDao {
         }
     }
     
+    public Departamento buscarDepartamento(String idDep){
+        conectar();
+        try{
+            Departamento dep = maneger.find(Departamento.class, idDep);
+            return dep;
+            
+        }catch(Exception ex){
+            return null;
+        
+        }
+    }
+    
+    
     
     
 }

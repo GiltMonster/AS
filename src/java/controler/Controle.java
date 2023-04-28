@@ -146,6 +146,25 @@ public class Controle extends HttpServlet {
             RequestDispatcher disp = request.getRequestDispatcher("mensagens.jsp");
             disp.forward(request, response);
             
+        }else if(flag.equalsIgnoreCase("buscarDepartamentos")){
+            //busca o departamento por ID para alterar
+            String idDep = request.getParameter("idDep");
+            
+            EmpresaDao dao = new EmpresaDao();
+            Departamento dep = dao.buscarDepartamento(idDep);
+            
+            if (dep == null){
+                
+            request.setAttribute("m", "Departamento não encontrado");
+            RequestDispatcher disp = request.getRequestDispatcher("mensagens.jsp");
+            disp.forward(request, response);
+            
+            }else{
+            
+                request.setAttribute("dep", dep);
+                RequestDispatcher disp = request.getRequestDispatcher("AlterarDepartamentoById.jsp");
+                disp.forward(request, response);
+            }
         }
         
     }

@@ -9,25 +9,17 @@
     </head>
     <body>
         <div class="container">
-            
             <form method="POST" action="Controle">
-                <input type="hidden" name="flag" value="AlterarDepartamento">
-                <p>
-                    <label class="form-label" for="idDep">Código:</label>
-                    <input class="form-control" id="idDep" type="text" name="idDep" readonly value="<%= request.getParameter("idDep") %>">
-                </p>
-                <p>
-                    <label class="form-label" for="nomeDep">Nome:</label>
-                    <input class="form-control" id="nomeDep" type="text" name="nomeDep" value="<%= request.getParameter("nomeDep")%>">
-                </p><p>
-                    <label class="form-label" for="foneDep">Telefone:</label>
-                    <input class="form-control" id="foneDep" type="text" name="foneDep" value="<%= request.getParameter("foneDep")%>">
-                </p>
-                
-                <input class="btn btn-primary mt-3" type="submit" value="Salvar Alteração">
-                
-            </form>
-            
-           </div>
+                <input type="hidden" name="flag" value="buscarDepartamentos">
+                <div class="m-1 row">
+                    <div>
+                    <label for="idDep" class="form-label">Id do departamento:</label>
+                    <input id="idDep" class="form-control" type="text" size="3" maxlength="3" name="idDep">
+                        <input class="btn btn-primary mt-3" type="submit" value="Buscar">
+                    </div>
+                </div>
+            </form> 
+                       
+        </div>
     </body>
 </html>
