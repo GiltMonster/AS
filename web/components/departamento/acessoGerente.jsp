@@ -75,7 +75,7 @@
                                     <a class="btn btn-outline-secondary p-1" href="components/funcionario/AlterarDepartamento.html" target="conteudo">Alterar</a>
                                     <a class="btn btn-outline-danger p-1" href="components/funcionario/ExcluirDepartamento.html" target="conteudo">Excluir</a>
                                     <a class="btn btn-outline-warning p-1" href="components/funcionario/ConsultarDepartamento.html" target="conteudo">Consultar</a>
-                                    <a class="btn btn-outline-warning p-1" href="components/funcionario/ListarDepartamento.html" target="conteudo">Listar</a>
+                                    <a class="btn btn-outline-warning p-1" href="ControleFuncionario?flag=listarFuncionarios" target="conteudo">Listar</a>
                                 </div>
                             </div>
                         </div>
@@ -106,7 +106,10 @@
     </nav>
     <main>
 
-        <iframe src="abertura.html" name="conteudo" class="container"></iframe>
+        <div class="ratio ratio-16x9">
+            <iframe src="abertura.html" name="conteudo" class="container" allowfullscreen></iframe>
+            
+        </div>
 
     </main>
 

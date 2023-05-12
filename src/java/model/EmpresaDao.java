@@ -126,7 +126,53 @@ public class EmpresaDao {
         }
     }
     
+    public int SalvarFuncionario(Funcionario func){
+
+        try{
+            conectar();
+            maneger.getTransaction().begin();
+            maneger.persist(func);
+            maneger.getTransaction().commit();
+            return 1;
+
+        }catch(EntityExistsException | RollbackException ex){
+            return 2; // ja cadastrado.
+
+        }catch(Exception ex){
+            return 3;
+        }
+    }
     
     
+    public List<Funcionario> listarFuncionario(){
+        
+            conectar();
+            try{
+                TypedQuery<Funcionario> query = maneger.createNamedQuery("Funcionario.findAll", Funcionario.class);
+                List<Funcionario> func = query.getResultList();
+                return func;
+            }catch(NoResultException ex){
+                return null;
+            }
+            
+    }
+
+    public int excluirFuncionario(String email) {
+         conectar();
+        try{
+            Funcionario func = maneger.find(Funcionario.class, email);
+            if(func == null){
+                return 2;
+        
+            }else{
+                maneger.getTransaction().begin();
+                maneger.remove(func);
+                maneger.getTransaction().commit();
+                return 1;
+            }
+        }catch(Exception ex){
+            return 0;
+        }
+    }
     
 }

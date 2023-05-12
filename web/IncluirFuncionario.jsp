@@ -23,21 +23,21 @@
              List<Departamento> Departamentos = (List<Departamento>) request.getAttribute("departamentos");  
         %>
         <div class="container">
-            <form method="POST" action="Controle">
+            <form method="POST" action="ControleFuncionario">
                 <div class="m-1 row">
-                    <input type="hidden" name="flag" value="CadastroDepartamento">
+                    <input type="hidden" name="flag" value="IncluirFuncionario">
                    
                     <label for="nome" class="form-label">Nome:</label>
-                    <input id="nome" class="form-control" type="text" size="50" maxlength="50" required>
+                    <input id="nome" class="form-control" type="text" size="50" maxlength="50" required name="nome">
 
                     <label for="email" class="form-label">E-mail:</label>
-                    <input id="email" class="form-control" type="email" size="70" maxlength="70" required>
+                    <input id="email" class="form-control" type="email" size="70" maxlength="70" required name="email">
                     
                     <label for="cargo" class="form-label">Cargo:</label>
-                    <input id="cargo" class="form-control" type="text" size="70" maxlength="70" >
+                    <input id="cargo" class="form-control" type="text" size="70" maxlength="70" name="cargo">
                     
                     <label for="salario" class="form-label">Salario:</label>
-                    <input id="salario" class="form-control" type="number" >
+                    <input id="salario" class="form-control" type="number" name="salario" >
                     
                     <label for="idDep" class="form-label">Nome do departamento:</label>
                     <select class="form-select my-1" aria-label="Departamentos" id="idDep" name="idDep">
